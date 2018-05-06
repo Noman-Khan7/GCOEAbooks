@@ -12,13 +12,19 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:src="@drawable/booklogo"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
-
+<LinearLayout
+    android:id="@+id/ca"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/logo">
     <TextView
         android:layout_centerHorizontal="true"
         android:id="@+id/gcoea"
@@ -26,16 +32,27 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logo"
         android:text="GCOEA "
-        android:textColor="#010101"
+        android:textColor="#f1f1f1"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/books"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
-        android:layout_toRightOf="@id/gcoea"
+       android:layout_height="wrap_content"
         android:fontFamily="cursive"
+        android:textSize="35sp"
         android:text=" books" />
-</RelativeLayout>
+
+
+</LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ca"
+        />
+    </RelativeLayout>
 
